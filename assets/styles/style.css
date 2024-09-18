@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  color: #333;
+}
+
+.header {
+  background-color: #353535;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  width: auto;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 10px 0 5px;
+  color: #4a4a4a;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.intro p {
+  margin: 10px 0;
+}
+
+.services {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.contact {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.contact a {
+  color: #e4405f;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin: 0;
+}
