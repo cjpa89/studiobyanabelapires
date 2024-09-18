@@ -115,6 +115,22 @@ h3 {
   margin: 0;
 }
 
+.map-container {
+  width: 100%; /* Take full width of the screen */
+  max-width: 100%; /* Prevent it from exceeding the screen width */
+  height: auto;
+  position: relative;
+  padding-bottom: 56.25%; /* This gives the aspect ratio of 16:9 for the map */
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; /* Remove default iframe border */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
   .logo {
@@ -134,4 +150,9 @@ h3 {
   h3 {
     font-size: 1.2em; /* Adjust the font size for mobile */
   }
+
+  .map-container {
+    padding-bottom: 75%; /* Adjust map's aspect ratio for smaller screens */
+  }
+
 }
