@@ -18,8 +18,28 @@ body {
   text-align: center;
   width: auto;
   height: 100px;
-  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  max-width: 100%;
   margin-bottom: 5px;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: #b0c5b2;
+}
+
+.navbar-text a {
+  color: #b0c5b2;
+}
+
+.navbar-text a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -56,6 +76,35 @@ h3 {
   margin-bottom: 20px;
 }
 
+.about {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .intro p {
   margin: 10px 0;
 }
@@ -66,6 +115,27 @@ h3 {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+}
+
+.services-content {
+  display: flex;
+  align-items: center;
+}
+
+.services-image {
+  flex: 1;
+  text-align: left;
+}
+
+.services-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.services-text {
+  flex: 1;
+  padding-left: 20px;
 }
 
 .services ul {
@@ -116,43 +186,55 @@ h3 {
 }
 
 .map-container {
-  width: 100%; /* Take full width of the screen */
-  max-width: 100%; /* Prevent it from exceeding the screen width */
+  width: 100%;
+  max-width: 100%;
   height: auto;
   position: relative;
-  padding-bottom: 56.25%; /* This gives the aspect ratio of 16:9 for the map */
+  padding-bottom: 56.25%;
 }
+
 .map-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0; /* Remove default iframe border */
+  border: 0;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 600px) {
   .logo {
-    height: auto; /* Allow the height to adjust */
-    max-width: 90%; /* Ensure it fits the screen width */
+    height: auto;
+    max-width: 90%;
     margin: 0 auto;
   }
 
   h1 {
-    font-size: 1.8em; /* Adjust the font size for mobile */
+    font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.5em; /* Adjust the font size for mobile */
+    font-size: 1.5em;
   }
 
   h3 {
-    font-size: 1.2em; /* Adjust the font size for mobile */
+    font-size: 1.2em;
   }
 
   .map-container {
-    padding-bottom: 75%; /* Adjust map's aspect ratio for smaller screens */
+    padding-bottom: 75%;
   }
 
+  .about-content, .services-content {
+    flex-direction: column;
+  }
+
+  .about-image, .services-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .services-text {
+    padding-left: 0;
+  }
 }

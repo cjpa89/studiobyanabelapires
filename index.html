@@ -2,32 +2,26 @@
 <html lang="pt-PT">
 
 <head>
-    <meta charset="utf-8"> <!-- Move to the top -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="O Studio by Anabela Pires oferece serviços de cabeleireiro e estética em Águeda. Marque o seu horário para cortar cabelo, coloração, penteados e tratamentos capilares." />
-
-    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Studio by Anabela Pires | Cabeleireiro e Estética em Águeda" />
     <meta property="og:description" content="O Studio by Anabela Pires oferece serviços de cabeleireiro e estética em Águeda. Marque o seu horário para cortar cabelo, coloração, penteados e tratamentos capilares." />
     <meta property="og:image" content="assets/pictures/logo.png" />
     <meta property="og:url" content="https://www.studiobyanabelapires.com" />
     <meta property="og:type" content="website" />
-
-    <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Studio by Anabela Pires | Cabeleireiro e Estética em Águeda" />
     <meta name="twitter:description" content="Serviços de cabeleireiro e estética em Águeda. Marque o seu horário para cortar cabelo, coloração, penteados e tratamentos capilares." />
     <meta name="twitter:image" content="assets/pictures/logo.png" />
-
-    <link rel="stylesheet" href="assets/styles/style.css"> <!-- Ensure correct protocol -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Studio by Anabela Pires | Cabeleireiro e Estética em Águeda</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
     <link rel="manifest" href="assets/ico/site.webmanifest">
-
-    <!-- Local SEO Structured Data -->
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -52,8 +46,6 @@
           ]
         }
     </script>
-    <!-- End of Local SEO Structured Data -->
-
 </head>
 
 <body>
@@ -63,28 +55,68 @@
             <img src="assets/pictures/logo.png" alt="Logo do Studio by Anabela Pires, cabeleireiro e estética em Águeda" class="logo">
         </div>
     </header>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Studio by Anabela Pires</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <i class="fas fa-phone"></i> <a href="tel:+351915970524" class="text-decoration-none">915 970 524</a>
+                    <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/studiobyanabelapires" target="_blank" class="text-decoration-none">@studiobyanabelapires</a>
+                </span>
+            </div>
+        </div>
+    </nav>
     <main class="content">
-        <section class="services">
-            <h1>Studio by Anabela Pires - Cabeleireiro e Estética</h1> <!-- Change to h1 -->
-            <p>Transforme o seu visual com os nossos serviços de cabeleireiro e estética.</p>
-            <p><strong>Horário:</strong> Segunda a Quinta, 14h - 19h30 | Sexta e Sábado, 8h - 19h30</p>
-            <h2>Serviços</h2> <!-- Changed to h2 -->
-            <ul>
-                <li>Cortes femininos, masculinos e infantis</li>
-                <li>Coloração e tratamentos capilares</li>
-                <li>Penteados para eventos</li>
-                <li>Estética</li>
-            </ul>
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Studio by Anabela Pires<br>Cabeleireiro e Estética</h1>
+                    <p>Transforme o seu visual com os nossos serviços de cabeleireiro e estética.</p>
+                    <p><strong>Horário:</strong> Segunda a Quinta, 14h - 19h30 | Sexta e Sábado, 8h - 19h30</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/pictures/fachada.jpg" alt="Cabeleireiro e Estética" />
+                </div>
+            </div>
         </section>
 
-        <section class="contact">
-            <h2>Entre em contato</h2> <!-- Changed to h2 -->
+        <section class="services" id="services">
+            <h2>Serviços</h2>
+            <div class="services-content">
+                <div class="services-image">
+                    <img src="assets/pictures/green_wall.png" alt="Serviços de Cabeleireiro e Estética" />
+                </div>
+                <div class="services-text">
+                    <ul>
+                        <li>Cortes femininos, masculinos e infantis</li>
+                        <li>Coloração e tratamentos capilares</li>
+                        <li>Penteados para eventos</li>
+                        <li>Estética</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Entre em contato</h2>
             <p>Tem dúvidas ou quer marcar um horário? Estamos à disposição!</p>
             <p><i class="fas fa-phone"></i> <a href="tel:+351915970524">915 970 524</a></p>
             <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/studiobyanabelapires" target="_blank">@studiobyanabelapires</a></p>
             <h3>Localização</h3>
-            <!-- Map wrapper to control the responsive behavior -->
             <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1017.1039815559566!2d-8.44152083134789!3d40.57262039642965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd230bcc78018ce3%3A0xe384e151e36f93a4!2sCabeleireiro%20-%20Studio%20by%20Anabela%20Pires!5e1!3m2!1spt-PT!2sin!4v1726673404723!5m2!1spt-PT!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -95,6 +127,7 @@
         <p>&copy; 2024 Studio by Anabela Pires - Todos os direitos reservados</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
